@@ -1,0 +1,7 @@
+Composite: When I login into Reddit.com with '$username' and '$password'
+Given I am on a page with the URL 'https://reddit.com'
+When I click on an element by the xpath '//a[@role="button" and contains(@href, "/login")]'
+When I switch to frame located `By.xpath(//iframe[contains(@src, "/login")])`
+When I enter '<username>' in a field by the xpath '//input[@id="loginUsername"]'
+When I enter '<password>' in a field by the xpath '//input[@id="loginPassword"]'
+When I click on an element with the text 'Log In'
