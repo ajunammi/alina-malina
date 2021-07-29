@@ -9,10 +9,10 @@ When I find <= '1' elements by By.xpath(//a[@role="button" and contains(@href, "
 |When I enter '${username}' in a field by the xpath '//input[@id='loginUsername']'|
 |When I enter '${userpassword}' in a field by the xpath '//input[@id='loginPassword']'|
 |When I click on an element with the text 'Log In'|
-When I wait until an element with attribute 'href'='<urlPart>' appears
-When I click on an element by the xpath '//*[@id="SHORTCUT_FOCUSABLE_DIV"]' 
-Then the text 'Before continuing, confirm that you want to keep this as your Reddit username.' exists
+When I wait until an element with the tag 'a' and attribute 'href'='<urlPart>' appears
+When I click on a link with the URL '<urlPart>'
+Then the text 'Today's Top Growing Communities' exists
 Examples:
 |urlPart|
-|/r/wholesomememes|
-|/r/AnimalsBeingDerps|
+|top|
+
